@@ -1,13 +1,22 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
-var HelloList = React.createClass({
+export interface HelloListItem {
+    id: number,
+    text: string
+}
+
+interface HelloListComponent {
+    data: HelloListItem[]
+}
+
+var HelloList = React.createClass<HelloListComponent, {}>({
     render: function () {
-        var items = this.props.data.map(item => (
+        var items = this.props.data.map(item =>
             <div>
                 {item.text}
             </div>
-        ));
+        );
 
         return (
             <div>
