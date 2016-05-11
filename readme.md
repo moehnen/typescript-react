@@ -1,19 +1,13 @@
-npm i -g typings typescript
+# Bootstrap minimal react code with typescript & systemjs
 
 
-tsc --init  -> tsconfig.json
---tsd init -> tsd.json
-npm init -> package.json
-    index.ts
+* tsc --init 
+* npm init 
+* npm i -g typings typescript
+* npm i react react-dom systemjs --save
+* typings install react react-dom systemjs --save --ambient
     
-npm i react --save
-typings install react --save --ambient
- 
-npm i react-dom --save
-typings install react-dom --save --ambient
 
-npm i systemjs --save
-typings install systemjs --save --ambient
 
-https://github.com/fdecampredon/rx-react
-https://github.com/Widdershin/rxjs-ecosystem/blob/master/README.md
+* https://github.com/fdecampredon/rx-react
+* https://github.com/Widdershin/rxjs-ecosystem/blob/master/README.md
