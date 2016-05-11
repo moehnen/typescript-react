@@ -1,7 +1,17 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
+import {HelloComponent}  from './component'
+import {HelloList}  from './list'
+
+var data = [
+    { id: 1, text: "typescript" },
+    { id: 2, text: "react" }
+];
 
 ReactDOM.render(
-    <h1>Hello, world!</h1>,
-        document.getElementById('example')
+    <div>
+        <h1>Hello <HelloComponent /></h1>
+        <HelloList data={data} />
+    </div>,
+    document.getElementById('app')
 );
