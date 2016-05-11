@@ -1,0 +1,7 @@
+{
+  "ambientDependencies": {
+    "react": "registry:dt/react#0.14.0+20160423065914",
+    "react-dom": "registry:dt/react-dom#0.14.0+20160412154040",
+    "systemjs": "registry:dt/systemjs#0.18.4+20160417155658"
+  }
+}

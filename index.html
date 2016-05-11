@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+</head>
+
+<body>
+    <script>
+        System.config({
+            baseURL: '/dist',
+            defaultJSExtensions: true,
+            map: {
+                'react': '/node_modules/react/dist/react.min.js',
+                'react-dom': '/node_modules/react-dom/dist/react-dom.min.js'
+            }
+        });
+        System.import('main');
+    </script>
+
+    <div id="example"></div>
+
+</body>
+
+</html>
