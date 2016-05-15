@@ -1,4 +1,16 @@
 // Platzieren Sie Ihre Einstellungen in dieser Datei, um Standard- und Benutzereinstellungen zu überschreiben.
 {
+    "files.exclude": {
+            "obj" :true,
+            "packages" :true,
+            ".idea" :true,
+            "Properties" :true,
+            "Areas": true,
+			"**/.git": true,
+            "**/*.map":true,
+			"**/.DS_Store": true,
+			"jspm_packages" : false,
+			"node_modules" : false
+		},
     "typescript.tsdk": "/node_modules/typescript/lib"
 }

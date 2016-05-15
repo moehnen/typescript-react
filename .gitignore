@@ -1,3 +1,4 @@
 node_modules/
 typings/
 *.map
+jspm_packages/

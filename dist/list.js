@@ -1,12 +1,10 @@
 "use strict";
 var React = require('react');
-var HelloList = React.createClass({
-    render: function () {
-        var items = this.props.data.map(function (item) {
-            return React.createElement("div", null, item.text);
-        });
-        return (React.createElement("div", null, items));
-    }
-});
-exports.HelloList = HelloList;
+exports.__hotReload = true;
+exports.HelloList = function (_a) {
+    var items = _a.items;
+    return React.createElement("div", null, items.map(function (item) {
+        return React.createElement("div", {key: item.id}, item.text);
+    }));
+};
 //# sourceMappingURL=list.js.map
