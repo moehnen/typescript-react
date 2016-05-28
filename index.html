@@ -4,14 +4,20 @@
 <head>
     <meta charset="UTF-8" />
     <title>Hello React!</title>
-    <script src="/jspm_packages/system.js"></script>
-    <script src="/jspm.browser.js"></script>
-    <script src="/jspm.config.js"></script>
+    <script src="/node_modules/systemjs/dist/system.js"></script>
 </head>
 
 <body>
     <script>
-        System.import('raudit/main');
+        System.config({
+            baseURL: '/dist',
+            defaultJSExtensions: true,
+            map: {
+                'react': '/node_modules/react/dist/react.min.js',
+                'react-dom': '/node_modules/react-dom/dist/react-dom.min.js'
+            }
+        });
+        System.import('main');
     </script>
 
     <div id="app"></div>
